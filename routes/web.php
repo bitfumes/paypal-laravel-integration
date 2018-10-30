@@ -5,3 +5,4 @@ Route::get('/', function () {
 });
 
 Route::get('/execute-payment', 'PaymentController@execute');
+Route::post('/create-payment', 'PaymentController@create')->name('create-payment');
