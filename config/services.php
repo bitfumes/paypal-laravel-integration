@@ -40,4 +40,13 @@ return [
         ],
     ],
 
+    'paypal' => [
+        'id' => env('PAYPAL_ID'),
+        'secret' => env('PAYPAL_SECRET'),
+        'url' => [
+            'redirect' => 'http://localhost:8000/execute-payment',
+            'cancel'=>'http://localhost:8000/cancel'
+        ]
+    ],
+
 ];
