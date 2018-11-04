@@ -45,7 +45,11 @@ return [
         'secret' => env('PAYPAL_SECRET'),
         'url' => [
             'redirect' => 'http://localhost:8000/execute-payment',
-            'cancel'=>'http://localhost:8000/cancel'
+            'cancel'=>'http://localhost:8000/cancel',
+            'executeAgreement' => [
+                'success'=>'http://localhost:8000/execute-agreement/true',
+                'failure'=>'http://localhost:8000/execute-agreement/false'
+            ]
         ]
     ],
 

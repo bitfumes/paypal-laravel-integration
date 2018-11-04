@@ -8,9 +8,9 @@
 </head>
 <body>
   <div class="container">
-    <form action="{{ route('create-payment') }}" method="post">
+    <form action="{{ route('create-agreement','P-53395368A9290273F3UVPTRQ') }}" method="post">
       @csrf
-      <input type="submit" value="Pay Now">
+      <input type="submit" value="Subscribe Now">
     </form>
   </div>
 </body>
